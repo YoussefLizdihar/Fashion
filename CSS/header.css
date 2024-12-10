@@ -1,0 +1,69 @@
+/*******************
+  Header Css Styles
+********************/
+
+#Header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.25rem 6.5rem;
+background-color: var(--headerBG);
+-webkit-backdrop-filter: blur(1.5rem);
+backdrop-filter: blur(1.5rem);
+width: 100%;
+z-index: 10;
+height: 4.375rem;
+position: fixed;
+box-shadow: 0 0.4rem 1.25rem var(--shadowCl);
+}
+
+#Header .logo {
+    width: 8rem;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    padding-inline: 1.25rem;
+    position: relative;
+}
+
+#navbar li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--fontCL);
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover, 
+#navbar li a.active {
+    color: var(--primaryCL)
+}
+
+#navbar li a:hover::after, 
+#navbar li a.active::after {
+    content: "";
+    width: 35%;
+    height: 0.1rem;
+    background-color: var(--primaryCL);
+    position: absolute;
+    bottom: -0.2rem;
+    left: 1.3rem;
+}
+
+.head-cart {
+    font-size: 1.5rem;
+}
+
+#mobile {
+    display: none;
+}
+
+#close {
+    display: none;
+    font-size: 1.2rem;
+}

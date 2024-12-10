@@ -1,0 +1,552 @@
+/*********************
+  Hero Section Styles
+**********************/
+
+#img-slider {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#img-slider .slider img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-position: top right;
+  position: relative;
+}
+
+#img-slider .slider .info {
+  position: absolute;
+  top: 43%;
+  left: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#img-slider .slider .info h4 {
+  padding-bottom: 1.9rem;
+  color: var(--fontWhiteCl);
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+#img-slider .slider .info h2:nth-last-of-type(2) {
+  color: var(--fontWhiteCl);
+  font-size: 3.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+#img-slider .slider .info h2:nth-last-of-type(1) {
+  color: var(--fontWhiteCl);
+  font-size: 3.9rem;
+  padding-bottom: 1.5rem;
+}
+
+#img-slider .slider .info p {
+  color: var(--fontWhiteCl);
+}
+
+#img-slider .slider .info p span {
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+
+#img-slider .slider .info button {
+  color: var(--fontWhiteCl);
+  background-color: transparent;
+  padding: 0.8rem 2.5rem;
+  border: 0.1rem solid var(--fontWhiteCl);
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+#img-slider .slider .info button:hover {
+  border-radius: 1.5rem;
+  transition: all 0.5s ease;
+  font-size: 1.3rem;
+  padding: 0.8rem 2.37rem;
+}
+
+/*********************
+  Features Section Styles
+**********************/
+
+#feature {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+#feature .fe-card {
+  width: 15rem;
+  text-align: center;
+  padding: 1.4rem 1rem;
+  box-shadow: 1.25rem 1.25rem 1.5rem var(--shadowCl);
+  border: 0.05rem solid var(--primaryCL);
+  user-select: none;
+  transition: all 0.3s linear;
+}
+
+#feature .fe-card:hover {
+  box-shadow: 0.5rem 0.5rem 0.7rem var(--shadowCl);
+  scale: 1.1;
+  transition: all 0.3s linear;
+  border-radius: 1rem;
+}
+
+#feature .fe-card .lni {
+  font-size: 2.5rem;
+  margin-block: 1.5rem;
+  color: var(--primaryCL);
+}
+
+#feature .fe-card h6 {
+  margin-bottom: 2rem;
+  background-color: var(--primaryCL);
+  padding: 0.3rem 0.5rem;
+  width: 70%;
+  margin-inline: auto;
+  color: var(--fontWhiteCl);
+  border: 0.05rem solid var(--primaryCL);
+}
+
+#feature .fe-card:hover h6 {
+  border: 0.05rem solid var(--primaryCL);
+  transition: all 0.3s linear;
+  color: var(--primaryCL);
+  background-color: var(--fontWhiteCl);
+}
+
+/***********************************
+  Featured Products Section Styles
+************************************/
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .products-container {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.47rem;
+}
+
+#product1 .products-container .product-card {
+  width: 23%;
+  min-width: 15.6rem;
+  padding: 0.63rem 0.8rem;
+  border: 0.1rem solid var(--shadowCl);
+  cursor: pointer;
+  box-shadow: 1.25rem 1.25rem 2rem var(--shadowCl);
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+#product1 .products-container .product-card:hover {
+  scale: 1.01;
+  transition: all 0.15s linear;
+  box-shadow: 0.5rem 0.5rem 1rem var(--shadowCl);
+}
+#product1 .products-container .product-card img {
+  width: 100%;
+}
+
+#product1 .product-card .product-info {
+  padding-block: 0.63rem;
+}
+
+#product1 .product-card .product-info span {
+  color: var(--primaryCL);
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  opacity: 0.8;
+}
+
+#product1 .product-card .product-info h3 {
+  color: var(--fontCL);
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  padding-top: 0.4rem;
+  font-weight: 600;
+}
+
+#product1 .product-card .product-info .star {
+  margin-inline: 1.7rem;
+  text-align: left;
+}
+
+#product1 .product-card .product-info i {
+  color: rgb(243, 181, 25);
+  font-size: 1.2rem;
+  margin: -0.15rem;
+}
+
+#product1 .product-card .product-info h4 {
+  color: var(--catshingCL);
+  text-align: left;
+  margin-inline: 1.7rem;
+  font-size: 1.2rem;
+}
+
+#product1 .product-card .cart {
+  position: absolute;
+  background-color: transparent;
+  color: var(--primaryCL);
+  bottom: 1.9rem;
+  right: 2.5rem;
+  font-size: 1.15rem;
+  padding-top: 0.5rem;
+  padding-inline: 0.45rem;
+  border-radius: 5rem;
+  transition: all 0.15s linear;
+  border: 0.1rem solid var(--primaryCL);
+}
+
+#product1 .product-card .cart:hover {
+  transition: all 0.15s linear;
+  color: var(--fontWhiteCl);
+  background-color: var(--primaryCL);
+}
+
+/***********************************
+  Call To Action Section Styles
+************************************/
+
+#banner {
+  background-image: url(../../img/banner/b21.jpg);
+  background-position-y: -30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner h4 {
+  color: var(--fontWhiteCl);
+}
+
+#banner h2 {
+  color: var(--fontWhiteCl);
+  margin-block: 2rem 3rem;
+}
+
+#banner h2 span {
+  background-color: var(--catshingCL);
+  padding-inline: 0.8rem;
+  text-decoration: underline;
+}
+
+#banner button {
+  color: var(--primaryCL);
+  background-color: var(--fontWhiteCl);
+  padding: 0.8rem 2.5rem;
+  border: none;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+#banner button:hover {
+  transition: all 0.2s linear;
+  background-color: var(--primaryCL);
+  color: var(--fontWhiteCl);
+}
+
+/***********************************
+  Small Banner Section Styles
+************************************/
+
+#sm-banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  background-image: url(../../img/img10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 110%;
+  height: 50vh;
+  min-width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-top: 7rem;
+}
+#sm-banner .banner-box:nth-child(1) {
+  background-image: url(../../img/img11.jpg);
+  /* background-position-x: 2rem; */
+  background-size: 120%;
+}
+
+#sm-banner .banner-box:nth-child(2) h2 {
+  color: var(--fontWhiteCl);
+}
+
+#sm-banner .banner-box:nth-child(2) span {
+  color: var(--fontWhiteCl);
+}
+
+#sm-banner .banner-box:nth-child(2) button {
+  color: var(--fontWhiteCl);
+  border-color: var(--fontWhiteCl);
+}
+#sm-banner .banner-box h2 {
+  color: var(--fontWhiteCl);
+}
+
+#sm-banner .banner-box h4 {
+  font-size: 1.5rem;
+  color: var(--fontWhiteCl);
+}
+
+#sm-banner .banner-box span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--fontWhiteCl);
+}
+
+#sm-banner .banner-box button {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--fontWhiteCl);
+  border-color: var(--fontWhiteCl);
+}
+
+#sm-banner .banner-box button:hover {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/***********************************
+  Small Banner Section Styles
+************************************/
+
+#ftr-banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-inline: 5rem;
+}
+
+#ftr-banner .banner-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  min-width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  background-size: 125%;
+}
+
+#ftr-banner .banner-box h4 {
+  color: var(--primaryCL);
+}
+
+#ftr-banner .banner-box button {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--primaryCL);
+  border-color: var(--primaryCL);
+}
+
+#ftr-banner .banner-box:nth-child(1) {
+  background-image: url(../../img/img1.jpg);
+  background-position-x: -5.5rem;
+}
+
+#ftr-banner .banner-box:nth-child(2) {
+  background-image: url(../../img/img7.jpg);
+}
+
+#ftr-banner .banner-box:nth-child(3) {
+  background-image: url(../../img/img2.jpg);
+  background-position-x: -5rem;
+}
+
+#ftr-banner .banner-box:nth-child(2) h4 {
+  color: var(--fontWhiteCl);
+}
+
+#ftr-banner .banner-box:nth-child(2) button {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--fontWhiteCl);
+  border-color: var(--fontWhiteCl);
+}
+#ftr-banner .banner-box button:hover {
+  font-size: 1.1rem;
+}
+
+/***********************************
+  Small Banner Section Styles
+************************************/
+
+#newsletter {
+  background: url(../../img/banner/b2.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-block: 5rem;
+  margin-top: 7rem;
+}
+
+#newsletter h4 {
+  color: var(--fontWhiteCl);
+  font-size: 2rem;
+}
+
+#newsletter p {
+  color: var(--fontWhiteCl);
+  font-size: 1.2rem;
+  margin-block: -0.1rem;
+  font-weight: 500;
+}
+
+#newsletter span {
+  color: #f4bd27ef;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding-inline: 0.3rem;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-size: 0.9rem;
+  width: 100%;
+  border: 0.1rem solid transparent;
+  outline: none;
+}
+
+#newsletter button {
+  background-color: var(--primaryCL);
+  color: var(--fontWhiteCl);
+  border: none;
+  height: 3.125rem;
+  text-wrap: nowrap;
+  width: 25%;
+}
+
+#newsletter button:hover {
+  background-color: var(--fontCL);
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+/***********************************
+  Footer Section Styles
+************************************/
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .fo-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+footer .col a {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+footer .col p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+footer .col a:hover {
+  color: var(--primaryCL);
+}
+
+footer .logo {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 9rem;
+}
+
+footer h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #222;
+}
+
+footer .follow {
+  margin-top: 1.25rem;
+}
+
+footer .follow i {
+  color: var(--primaryCL);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .install .row img {
+    border: 0.1rem solid var(--primaryCL);
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+}
+
+footer .install img {
+    margin: 0.65rem 0 1rem;
+}
+footer .copyright {
+    text-align: center;
+}

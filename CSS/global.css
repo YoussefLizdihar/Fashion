@@ -1,0 +1,109 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* 
+  - CL == Color
+  - BG == Background Color
+  */
+  --primaryCL: rgb(61, 84, 84);
+  --headerBG:rgba(255, 255, 255, 0.776);
+  --fontCL:rgb(26, 26, 26);
+  --fontWhiteCl:rgb(245, 248, 248);
+  --shadowCl:rgba(0,0,0, 0.06);
+  --catshingCL: rgb(58, 108, 91);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/********** Global Styles ************/
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 4rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.875rem;
+  line-height: 3.375rem;
+  color: #222;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+span, p, a {
+  margin: 5px 0 5px 0;
+  font-family: "Cormorant Garamond", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.section-p1 {
+  padding: 2.5rem 5rem;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button.btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--fontCL);
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+.none {
+  display: none !important;
+}
+
+.select-none {
+  user-select: none;
+}
